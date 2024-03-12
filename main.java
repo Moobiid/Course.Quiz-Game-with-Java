@@ -149,8 +149,27 @@ public class Main {
       };
 
       case 6:{
-        
-      }
+        System.out.println("(6) Which famous Brazilian festival is known for its vibrant and           colorful parades?\n");
+        System.out.println("1. Carnival  || 2. Oktoberfest\n");
+        System.out.println("3. Diwali    || 4. La Tomatina\n");
+        System.out.println("R: ");
+        resposta = new Scanner(System.in).nextInt();
+
+        if (resposta == 1) {
+            System.out.println("\nCorrect! You've got 10 points");
+            pontuacao += 10;
+        } else {
+            System.out.println("\nWrong! You've got 0 points");
+        }
+
+        System.out.println("Would you like to continue?");
+        System.out.println("1. Yes || 2. No");
+        if (new Scanner(System.in).nextInt() == 1) {
+            questionario = 7; // Assuming you have more questions
+        } else {
+            break;
+        }
+      };
     };
 
     System.out.println("Your final score is: " + pontuacao);
