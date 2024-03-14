@@ -132,7 +132,7 @@ public class Main {
         System.out.println("R: ");
         resposta = new Scanner(System.in).nextInt();
 
-        if (resposta == 2){
+        if (resposta == 5){
           System.out.println("\nCorrect! You've got 10 points\n");
           pontuacao += 10;
         } else {
